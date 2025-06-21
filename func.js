@@ -4,20 +4,39 @@ let endVid = document.getElementById('stop-camera')
 
 let mediaStream;
 
-async function startCameraEvent() {
+startVid.addEventListener('click', async () => {
     try {
         const constraints = {
-            'video': true,
-            'audio': true
+            audio: {
+                echoCancellation: true,
+                noiseSuppression: true
+            },
+            video: {
+                width: {
+                    ideal: 1280
+                },
+                height: {
+                    ideal: 720
+                }
+            }
         };
-        mediastream = await navigator.mediaDevices.getUserMedia(constraints);
-        camera.srcObject = mediastream;
+        mediaStream = await navigator.mediaDevices.getUserMedia(constraints);
+        camera.srcObject = mediaStream;
         startVid.disabled = true;
         endVid.disabled = false;
     } catch (error) {
         alert(`Permission denied or no device found: ${err.message}`);
         console.error(err);
     }
-}
+})
 
-startVid.addEventListener('click', () => startCameraEvent())
+endVid.addEventListener('click', async () => {
+    if (!mediaStream) return;
+    mediaStream.getTracks().forEach((track) => {
+        track.stop();
+    });
+
+    camera.srcObject = null;
+    startVid.disabled = false;
+    endVid.disabled = true;
+});
