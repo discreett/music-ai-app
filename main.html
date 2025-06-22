@@ -9,12 +9,33 @@
 </head>
 
 <body>
-    <h1> Guitar AI </h1>
-    <video id="camera-stream" playsinline autoplay muted></video>
-    <div>
-        <button id="start-camera">Start</button>
-        <button id="stop-camera" disable>Stop</button>
-    </div>
+    <header>
+        <nav>
+            <div id="nav-container">
+                <h1 id="title"> Music AI </h1>
+                <ul>
+                    <li><a class="nav-butt">Log in</a></li>
+                    <li><a class="nav-butt">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="front">
+        <h1>Your personalized A.I, just for music.</h1>
+    </section>
+
+    <section>
+        <div id="video-section">
+            <div id="camera-controls">
+                <video id="camera-stream" playsinline autoplay muted></video>
+                <div id="button-row">
+                    <button id="start-camera">Start</button>
+                    <button id="stop-camera" disable>Stop</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="func.js"></script>
 </body>
 
