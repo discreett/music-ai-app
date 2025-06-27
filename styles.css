@@ -68,6 +68,7 @@ video {
     border-radius: 12px;
     box-shadow: 0 0 12px #0008;
     margin: 0;
+    border-style: inset;
 }
 
 #camera-controls {
@@ -83,4 +84,33 @@ video {
     justify-content: center;
     padding: 2rem;
     width: 8rem;
+
+}
+
+.button {
+    background-color: #65e687;
+    border: none;
+    color: #558762;
+    padding: 2rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-style: outset;
+}
+
+.button:hover {
+    background-color: #558762;
+    color: #65e687;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    color: black;
 }
