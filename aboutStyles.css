@@ -1,0 +1,85 @@
+.front {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: 3rem;
+    font-family: Helvetica;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.4), rgba(0, 128, 0, 0.4)),
+        url('https://i.pinimg.com/originals/3e/fe/1c/3efe1cb845954233246f60d5d8395dd0.gif');
+    color: #f5f2d3;
+}
+
+.button {
+    background-color: #65e687;
+    border: none;
+    color: #558762;
+    padding: 2rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-style: outset;
+}
+
+.button:hover {
+    background-color: #558762;
+    color: #65e687;
+}
+
+#about {
+    padding: 2rem;
+    border-radius: 8px;
+    padding-left: 5rem;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    color: #558762;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-family: Helvetica;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    width: 45vw;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 2s infinite ease-in;
+}
+@keyframes wave {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-1px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(1px); }
+  100% { transform: translateY(0); }
+}
+
+.about-head {
+    width: auto;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#guitar {
+    margin-top: 2rem;
+    width: 40vw;
+    height: 30vh;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #0008;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#try {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

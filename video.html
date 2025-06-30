@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Video</title>
+    <link rel="stylesheet" href="mainStyles.css">
+    <link rel="stylesheet" href="videoStyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav-container">
+                <h1 id="title">TunedTutor</h1>
+                <ul>
+                    <li><a class="nav-butt">Log in</a></li>
+                    <li><a class="nav-butt">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="video-section">
+            <div id="camera-controls">
+                <video id="camera-stream" playsinline autoplay muted></video>
+                <div id="button-row">
+                    <button class="button" id="start-camera">Start</button>
+                    <button class="button" id="stop-camera" disable>Stop</button>
+                </div>
+            </div>
+        </div>
+        <canvas id="visualizer"></canvas>
+    </section>
+    <script type="text/javascript" src="func.js"></script>
+</body>
+
+</html>
