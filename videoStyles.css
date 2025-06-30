@@ -1,16 +1,16 @@
 #video-section {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 5rem;
+    flex-direction: flex-start;
+    align-items: column;
     background-color: #d2f4bb;
     height: 100vh;
     position: relative;
     justify-content: center;
 }
 
+
+
 video {
-    width: 60vw;
     height: 50vh;
     max-width: 800px;
     border-radius: 12px;
@@ -24,6 +24,7 @@ video {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    position: relative;
 }
 
 #button-row {
@@ -58,9 +59,8 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     pointer-events: none;
-    color: black;
 }
 
 .about-head {
