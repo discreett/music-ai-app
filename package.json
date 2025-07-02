@@ -1,0 +1,23 @@
+{
+  "name": "music-ai-app",
+  "version": "1.0.0",
+  "main": "camera.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discreett/music-ai-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/discreett/music-ai-app/issues"
+  },
+  "homepage": "https://github.com/discreett/music-ai-app#readme",
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.10.0"
+  }
+}
