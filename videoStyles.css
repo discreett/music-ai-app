@@ -4,11 +4,8 @@
     align-items: column;
     background-color: #d2f4bb;
     height: 100vh;
-    position: relative;
     justify-content: center;
 }
-
-
 
 video {
     width: 640px;

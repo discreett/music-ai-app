@@ -1,18 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body {
     margin: 0;
     background-color: #d2f4bb;
 }
 
 nav {
+    display: flex;
     background-color: #d2f4bb;
-    padding: 0.5rem 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav-container {
-
-    display: flex;
-    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    top: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: .7fr auto 1fr;
     align-items: center;
+    font-size: 1rem;
+    max-width: 85%;
+    margin-left: 8%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px inset rgba(255, 255, 255, 0.18);
+    margin: 0 auto;
+    z-index: 1000;
 }
 
 nav ul {
@@ -26,12 +42,62 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
+    color: black;
     font-weight: bold;
     padding: 1.5rem 1.5rem;
     border-radius: 4px;
+    font-size: 1.5rem;
+    font-family: Roboto Mono, monospace;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, #titleButt:hover {
+    color: #e9f8e0;
+    cursor: pointer;
+}
+
+#titleButt {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-family: Roboto Mono, monospace
+}
+
+.tool-butt {
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#tool-container {
+    display: flex;
+    justify-self: center;
+
+}
+
+#title-container {
+    display: flex;
+    justify-self: start;
+}
+
+#login-container {
+    display: flex;
+    justify-self: end;
+}
+
+#sign-up-butt {
     background-color: #e9f8e0;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-family: Roboto Mono, monospace;
+}
+
+#sign-up-butt:hover {
+    background-color: #2e342e;
+    color: #d2f4bb;
     cursor: pointer;
 }

@@ -35,8 +35,7 @@ function drawAllLandmarks(landmarks) {
 
     for (let i = 0; i < landmarks.length; i++) {
         const x = landmarks[i].x * visualizer.width;
-        const y = landmarks[i].y * visualizer.height;
-
+        const y = landmarks[i].y * visualizer.height;;
         ctx.beginPath();
         ctx.arc(x, y, 6, 0, 2 * Math.PI);
         ctx.fillStyle = 'red';
